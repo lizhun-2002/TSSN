@@ -12,7 +12,7 @@ Python 3.6 and PyTorch 0.4.0
 We collected new video data sets and proposed an estimation procedure to calculate refined rainfall depth from the original meteorological data. The data set is too large to upload. We will consider sharing the data set in other ways.
 
 ## Train
-```python
+```bash
 python main.py kaist 3 RGB ./data_6frames/ data_file_1-3-5.csv \
    --arch BNInception --num_segments 3 --num_spacial_segments 4 \
    --gd 20 --lr 0.001 --lr_steps 190 300 --epochs 340 \
