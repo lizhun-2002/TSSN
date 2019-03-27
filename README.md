@@ -21,14 +21,14 @@ python main.py kaist 3 RGB ./data_6frames/ data_file_1-3-5.csv \
 ```
 
 ## Test
-```python
+```bash
 python test_models.py kaist 3 RGB ./data_6frames/ data_file_1-3-5.csv \
     threeway_1-3-5_mix_2x2tssn_rgb_model_best.pth.tar --num_spacial_segments 4 \
    --arch BNInception --save_scores score_file_threeway_1-3-5_mix_2x2tssn_rgb_seg3_epoch340_tseg4 --test_segments 4
 ```
 
 ## Fuse the scores
-```python
+```bash
 python eval_scores.py \
     score_file_threeway_1-3-5_mix_2x2tssn_rgb_seg3_epoch340_tseg4.npz \
     score_file_threeway_1-3-5_mix_2x2tssn_rgbdiff_seg3_epoch340_tseg4.npz \
